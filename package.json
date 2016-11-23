@@ -1,0 +1,22 @@
+{
+  "name": "nodejs.samples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nursultan156/nodejs.samples.git"
+  },
+  "author": "nursultan156@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nursultan156/nodejs.samples/issues"
+  },
+  "homepage": "https://github.com/nursultan156/nodejs.samples#readme",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
