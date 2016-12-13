@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/nursultan156/nodejs.samples#readme",
   "dependencies": {
+    "nodejs.mongodb": "^1.0.0",
     "underscore": "^1.8.3"
   }
 }
