@@ -8,7 +8,9 @@ var repository_192_168_66_13 = repository.new('mongodb://192.168.66.13:27017/t1'
 var payload = {
     collectionName: 'c11',
     document: {
-        a:1,
+        a:function(){
+            var c = 1000;
+        },
         b:4
     }
 };
