@@ -91,9 +91,38 @@ async.series([
             //    callback(null);
             //});
 
-            console.log(fs.existsSync(path.join(__dirname, '../files/Новый текстовый документ.txt')));
+            //console.log(fs.existsSync(path.join(__dirname, '../files/Новый текстовый документ.txt')));
 
-            callback(null);
+
+            var bucket = new GridFSBucket(_db);
+            var downloadStream = bucket.openDownloadStream('5852f3df4782b7065c6745df', null);
+
+            var filepath = path.join(__dirname, '../files/Новый текстовый документ3.txt');
+            var writeStream = fs.createWriteStream(filepath);
+
+            //downloadStream.pipe(writeStream).on('error', function (error) {
+            //    return callback(error);
+            //}).on('finish', function () {
+            //    return callback(null);
+            //});
+
+            downloadStream.on('error', function(error) {
+                console.log(error);
+            });
+
+            var gotData = 0;
+            var str = '';
+            downloadStream.on('data', function(data) {
+                ++gotData;
+                str += data.toString('utf8');
+            });
+
+            downloadStream.on('end', function() {
+                console.log(gotData);
+                console.log(str);
+            });
+
+            //callback(null);
 
         }
     ],
