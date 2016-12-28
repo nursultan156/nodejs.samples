@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/nursultan156/nodejs.samples#readme",
   "dependencies": {
+    "async": "^2.1.4",
+    "devir-mbclient": "0.0.4",
+    "devir-mbserver": "0.0.7",
     "nodejs.mongodb": "^1.0.0",
     "underscore": "^1.8.3"
   }
