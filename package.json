@@ -21,6 +21,7 @@
     "devir-mbclient": "0.0.4",
     "devir-mbserver": "0.0.7",
     "nodejs.mongodb": "^1.0.0",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "unoconv2": "^1.0.0"
   }
 }
