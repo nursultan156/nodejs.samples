@@ -20,6 +20,8 @@
     "async": "^2.1.4",
     "devir-mbclient": "0.0.4",
     "devir-mbserver": "0.0.7",
+    "docxtemplater": "^3.0.3",
+    "jszip": "^2.6.1",
     "nodejs.mongodb": "^1.0.0",
     "nodejs.transformator": "^1.0.0",
     "nodejs.validator": "^1.0.0",
