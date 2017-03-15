@@ -49,9 +49,15 @@ var underscore = function(){
         console.log(obj1);
         console.log(obj2);
         console.log(obj3);
-    }
+    };
+    this.filter = function(){
+        var nonemptyarray = [1,null,3,4,5];
+        var emptyarray = [];
+        console.log(_.filter(nonemptyarray, function(item){ return item; }));
+        console.log(_.filter(emptyarray, function(item){ return item; }));
+    };
 };
 
 //run
 var tester = new underscore();
-tester.extendOwn();
+tester.filter();
