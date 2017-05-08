@@ -4,7 +4,7 @@
 var _ = require('underscore');
 
 var primitive = function () {
-    this.parseFloat = function () {
+    this.Float_parse = function () {
         var array = ['1,2', "2", null, "NULL", "hello"];
         _.each(array, function (item) {
             console.log(item ? parseFloat(item.toString().replace(/,/g, ".")) : "unparsable");
@@ -13,6 +13,8 @@ var primitive = function () {
     this.Date_parse = function () {
         var array = ['2016-02-23 00:00:00', null, {}, 0];
         _.each(array, function (item) {
+            var v = new Date(Date.parse(item));
+            console.log(v=='Invalid Date');
             console.log(new Date(Date.parse(item)));
         });
     };
