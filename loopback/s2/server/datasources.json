@@ -1,0 +1,22 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "ds_to_s1": {
+    "name": "ds_to_s1",
+    "baseURL": "http://localhost:3001",
+    "crud": true,
+    "connector": "rest"
+  },
+  "rest_test1": {
+    "name": "rest_test1",
+    "baseURL": "localhost",
+    "options": "asd",
+    "operations": [
+      "asd"
+    ],
+    "crud": true,
+    "connector": "rest"
+  }
+}

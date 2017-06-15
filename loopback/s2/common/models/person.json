@@ -1,0 +1,22 @@
+{
+  "name": "person",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "fn": {
+      "type": "string",
+      "required": true
+    },
+    "ln": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
