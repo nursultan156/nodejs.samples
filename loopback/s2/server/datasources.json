@@ -12,7 +12,7 @@
       {
         "template": {
           "method": "GET",
-          "url": "http://localhost:3003/api/cities"
+          "url": "${restServiceUrl}"
         },
         "functions": {
           "getCity": []
@@ -24,7 +24,7 @@
         },
         "template": {
           "method": "POST",
-          "url": "http://localhost:3003/api/cities",
+          "url": "${restServiceUrl}",
           "body": "{newCity:object}"
         }
       }
