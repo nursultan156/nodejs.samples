@@ -3,20 +3,31 @@
     "name": "db",
     "connector": "memory"
   },
-  "ds_to_s1": {
-    "name": "ds_to_s1",
-    "baseURL": "http://localhost:3001",
-    "crud": true,
-    "connector": "rest"
-  },
-  "rest_test1": {
-    "name": "rest_test1",
-    "baseURL": "localhost",
-    "options": "asd",
+  "rest": {
+    "name": "rest",
+    "baseURL": "http://localhost:3003",
+    "crud": false,
+    "connector": "rest",
     "operations": [
-      "asd"
-    ],
-    "crud": true,
-    "connector": "rest"
+      {
+        "template": {
+          "method": "GET",
+          "url": "http://localhost:3003/api/cities"
+        },
+        "functions": {
+          "getCity": []
+        }
+      },
+      {
+        "functions": {
+          "postCity": ["newCity"]
+        },
+        "template": {
+          "method": "POST",
+          "url": "http://localhost:3003/api/cities",
+          "body": "{newCity:object}"
+        }
+      }
+    ]
   }
 }

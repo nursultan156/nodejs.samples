@@ -35,8 +35,8 @@
     "dataSource": "db",
     "public": false
   },
-  "person": {
-    "dataSource": "db",
+  "city-view-model": {
+    "dataSource": "rest",
     "public": true
   }
 }
